@@ -19,11 +19,11 @@ let clickCount = 0; // 记录点击 No 的次数
 
 // No 按钮的文字变化
 const noTexts = [
-  "？你认真的吗…",
-  "要不再想想？",
-  "不许选这个！ ",
-  "我会很伤心…",
-  "不行:(",
+  "别选这个",
+  "你选你妈",
+  "别几把选了 ",
+  "艾n.不让你选",
+  "我就不让你选",
 ];
 
 // No 按钮点击事件
@@ -57,8 +57,8 @@ noButton.addEventListener("click", function () {
 });
 
 // Yes 按钮点击后，进入表白成功页面
-const loveTest = `!!!喜欢你!! ( >᎑<)♡︎ᐝ  ${
-  username ? `${safeUsername}  ♡︎ᐝ(>᎑< )` : ""
+const loveTest = `宝贝是91vip!  ${
+  username ? `${safeUsername}  艾n.制作 没有侮辱人的意思 宝贝不代表任何人` : ""
 }`;
 
 yesButton.addEventListener("click", function () {
@@ -75,4 +75,5 @@ yesButton.addEventListener("click", function () {
 
   // 禁止滚动，保持页面美观
   document.body.style.overflow = "hidden";
+
 });
